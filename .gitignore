@@ -1,0 +1,20 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
