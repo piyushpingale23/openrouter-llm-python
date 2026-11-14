@@ -1,20 +1,78 @@
-# Secrets and environment files
+
+# ==============================
+# Environment variables and secrets
+# ==============================
 .env
 .env.*
 !.env.example
 
-# Python
+# ==============================
+# Python cache files
+# ==============================
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
+
+# ==============================
+# Virtual environment
+# ==============================
 .venv/
 venv/
 env/
 
-# Jupyter
+# ==============================
+# Python packaging
+# ==============================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==============================
+# Testing and coverage
+# ==============================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ==============================
+# Type checking and linting
+# ==============================
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
 .ipynb_checkpoints/
 
-# Editors and operating systems
+# ==============================
+# IDE and editor files
+# ==============================
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+
+# ==============================
+# Logs and temporary files
+# ==============================
+*.log
+*.tmp
+*.bak
+
+# ==============================
+# RAG generated vector store
+# ==============================
+src/rag/vector_store/
+
+# ==============================
+# OS generated files
+# ==============================
 .DS_Store
+Thumbs.db
